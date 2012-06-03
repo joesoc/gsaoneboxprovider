@@ -1,4 +1,4 @@
-#summary Implementation of the interfaces for Jive SBS.
+#summary Implementation of the provider interfaces for Jive SBS.
 #labels Jive,OneBox,Provider
 
 = Introduction =
