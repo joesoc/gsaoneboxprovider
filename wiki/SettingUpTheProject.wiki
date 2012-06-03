@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Setting up the project in the GSA and in Eclipse to test and build it.
 #labels Eclipse,Build
 
 = Introduction =
