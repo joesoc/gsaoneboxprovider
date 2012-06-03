@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Implementation of the interfaces for Jive SBS.
 #labels Jive,OneBox,Provider
 
 = Introduction =
