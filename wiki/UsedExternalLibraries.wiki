@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Used external libraries in the project.
 #labels Libraries,Jars
 
 = Introduction =
