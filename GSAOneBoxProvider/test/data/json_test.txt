@@ -1,0 +1,109 @@
+{
+  "data" : [ {
+    "type" : "post",
+    "subject" : "Subject 1",
+    "author" : {
+      "name" : "Administrator",
+      "username" : "admin",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/1",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "6VhaGwWbXKZsq2wByCrWG4f0GS2FMw",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/posts/1021"
+    }
+  }, {
+    "type" : "post",
+    "subject" : "Subject 2",
+    "author" : {
+      "name" : "Administrator",
+      "username" : "admin",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/1",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "lxY0ynTG5IOAs3Nk8OCt6Uc138TsXQ",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/posts/1033"
+    }
+  }, {
+    "type" : "post",
+    "subject" : "Subject 3",
+    "author" : {
+      "name" : "Administrator",
+      "username" : "admin",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/1",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "n084QxUOwtfR4CgHHXIgcGfB05Ehwa",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/posts/1005"
+    }
+  }, {
+    "type" : "post",
+    "subject" : "Subject 4",
+    "author" : {
+      "name" : "Administrator",
+      "username" : "admin",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/1",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "4pdXSMeFMJqC08heYH58xUvBV1DO7F",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/posts/1029"
+    }
+  }, {
+    "type" : "discussion",
+    "subject" : "Subject 5",
+    "author" : {
+      "name" : "user-zE3416YXEi8RG405",
+      "username" : "user-ze3416yxei8rg405",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/2000",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "Psauob7SsH5B0EF6INHXCC02GFcFuG",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/discussions/1000"
+    }
+  }, {
+    "type" : "discussion",
+    "subject" : "Subject 6",
+    "author" : {
+      "name" : "user-Y5HrCk7462tk94IH",
+      "username" : "user-y5hrck7462tk94ih",
+      "links" : {
+        "alt" : "http://localhost:50001/oc/v1/users/2016",
+        "avatar" : "http://localhost:50001/oc/v1/avatars/default"
+      }
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "xPArVspBs1nX0OzzUuBHANXG6sFazT",
+    "links" : {
+      "alt" : "http://localhost:50001/oc/v1/discussions/1004"
+    }
+  } ],
+  "links" : {
+    "next" : "http://localhost:50001/oc/v1/search/?type=post&type=discussion&q=lion&limit=6&offset=12",
+    "previous" : "http://localhost:50001/oc/v1/search/?type=post&type=discussion&q=lion&limit=6"
+  }
+}
