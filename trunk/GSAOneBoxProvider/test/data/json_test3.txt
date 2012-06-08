@@ -1,0 +1,45 @@
+{
+  "data" : [ {
+    "type" : "discussion",
+    "subject" : "Test",
+    "author" : {
+      "name" : "a a",
+      "level" : {
+        "name" : "Newbie",
+        "points" : 2,
+        "resources" : {
+          "image" : {
+            "ref" : "http://192.168.119.128:8080/api/core/v2/images/status/statusicon-47.gif",
+            "allowed" : [ "GET" ]
+          }
+        }
+      },
+      "username" : "admin",
+      "resources" : {
+        "self" : {
+          "ref" : "http://192.168.119.128:8080/api/core/v2/users/1",
+          "allowed" : [ "GET" ]
+        },
+        "avatar" : {
+          "ref" : "http://192.168.119.128:8080/api/core/v2/avatars/1002",
+          "allowed" : [ "GET" ]
+        }
+      },
+      "id" : 1
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "test test",
+    "resources" : {
+      "self" : {
+        "ref" : "http://192.168.119.128:8080/api/core/v2/discussions/1001",
+        "allowed" : [ "GET", "DELETE" ]
+      },
+      "html" : {
+        "ref" : "http://localhost:8080/thread/1001",
+        "allowed" : [ "GET" ]
+      }
+    },
+    "modificationDate" : "2012-04-08T13:39:12.114+0000"
+  } ]
+}
