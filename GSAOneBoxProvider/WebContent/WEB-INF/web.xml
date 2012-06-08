@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Copyright 2006 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+  	<display-name>Q_PERIOR GSA OneBox Provider</display-name>
+  	<description>
+     	This application serves OneBox provider servlets
+  	</description>
+
+	<servlet>
+        <servlet-name>QPOneBoxProviderServlet</servlet-name>
+        <servlet-class>com.qperior.gsa.oneboxprovider.QPOneBoxProviderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QPOneBoxProviderServlet</servlet-name>
+        <url-pattern>/QPOneBoxProviderServlet</url-pattern>
+    </servlet-mapping>
+
+  <!-- Define a Security Constraint on this Application -->
+<!--
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>OneBox Provider</web-resource-name>
+      <url-pattern>/BasicAuthEmployeeDirectoryProvider</url-pattern>
+      <url-pattern>/LDAPAuthEmployeeDirectoryProvider</url-pattern>
+      <url-pattern>/SSOAuthEmployeeDirectoryProvider</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+       <role-name>oneboxclient</role-name>
+    </auth-constraint>
+  </security-constraint>
+-->
+
+  <!-- Define the Login Configuration for this Application -->
+<!--
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>OneBox Provider</realm-name>
+  </login-config>
+-->
+
+  <!-- Security roles referenced by this web application -->
+<!--
+  <security-role>
+    <description>
+      The role that is required to access the OneBox provider
+    </description>
+    <role-name>oneboxclient</role-name>
+  </security-role>
+-->
+
+  <!-- error-page>
+    <error-code>401</error-code>
+    <location>/401.xml</location>
+  </error-page -->
+
+</web-app>
