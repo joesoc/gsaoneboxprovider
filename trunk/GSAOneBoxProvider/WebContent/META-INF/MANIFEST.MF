@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: 
+Implementation-Title: GSAOneBoxPovider
+Implementation-Version: 1.0.0
+Implementation-Vendor: Q_PERIOR AG.
+Main-Class: com.qperior.GSAOneBoxProvider.QPOneBoxProviderMain
