@@ -3,12 +3,16 @@
 
 = Introduction =
 
-Add your content here.
+Setting up the project in the GSA and in Eclipse to test and build it.
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==Setting up the GSA==
+
+==Setting up the project in Eclipse==
+  * just check out the project in Eclipse; everything should be OK (sources should be build automatically)
+
+==Build and deploy it==
+  * export the project as web archive (File - Export - Web - WAR file)
+  * deploy it to a servlet container (e.g. Tomcat)
