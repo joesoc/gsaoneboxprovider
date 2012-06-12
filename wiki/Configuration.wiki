@@ -11,7 +11,7 @@ In addition there might be property files for a provider implementation like 'Ji
 ==GSAOneBoxProvider.properties==
   * Version of the application
 Version=0.1
-  * Provider class used (has to be a full qualified name to find the class by reflection)
+  * Provider class used (has to be a fully qualified name to find the class by reflection)
 Provider=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveProvider
-  * Security provider class used (has to be a full qualified name to find the class by reflection)
+  * Security provider class used (has to be a fully qualified name to find the class by reflection)
 SecurityProvider=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveSecurityProvider
