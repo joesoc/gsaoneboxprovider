@@ -8,6 +8,10 @@ In addition there might be property files for a provider implementation like 'Ji
 
 = Details =
 
+==log4j.properties==
+Please see the log4j documentation under:
+[http://logging.apache.org/log4j/ Apache Log4J]
+
 ==GSAOneBoxProvider.properties==
   * Version of the application
 Version=0.1
