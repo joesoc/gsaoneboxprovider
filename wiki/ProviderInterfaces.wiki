@@ -15,10 +15,14 @@ It might be a good idea to combine both to one interface; but at the moment I de
 
 ==Provider interface==
 It can be found in package 'com.qperior.gsa.oneboxprovider.provider' together with a abstract class which implements the interface ('QPAbstractProvider'). Therefore in normal case you will implement these abstract class. 
-Then there are only 3 methods left:
+
+Then there are only three methods left:
   * public QPIOneBoxResults provideOneBoxResults() 
   * public String getProviderName()
   * public String toString()
 
 ==SecurityProvider interface==
 It can be found in package 'com.qperior.gsa.oneboxprovider.security' together with a abstract class which implements the interface ('QPAbstractSecurityProvider'). Therefore in normal case you will implement these abstract class.
+
+Then there are only three methods left:
+  * public List<QPAuthType> getSupportedAuthTypes()
