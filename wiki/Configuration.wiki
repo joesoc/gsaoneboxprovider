@@ -3,12 +3,15 @@
 
 = Introduction =
 
-Add your content here.
-
+Configuration of the GSA OneBox Provider with different property files. All of them can be found in the "src" folder. The logging can be configured in 'log4j.properties'. The GSA OneBox Provider itself can be configured with the 'GSAOneBoxProvider.properties'.
+In addition there might be property files for a provider implementation like 'JiveProvider.properties'. They are documented together with the provider implementation.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==GSAOneBoxProvider.properties==
+  * Version of the application
+Version=0.1
+ * Provider class used (has to be a full qualified name to find the class by reflection)
+Provider=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveProvider
+* Security provider class used (has to be a full qualified name to find the class by reflection)
+SecurityProvider=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveSecurityProvider
