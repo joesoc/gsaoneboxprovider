@@ -4,15 +4,21 @@
 = Introduction =
 
 The GSA OneBox Provider acts as a small framework to easily implement a concrete provider for a content source. To do that there are only two slim interfaces to implement. 
+
 A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
 
 = Details =
 
-One interface represents the provider itself ('QPIProvider') and the other encapsulates all security features of the provider.
+One interface represents the provider itself ('QPIProvider') and the other encapsulates all security features of the provider ('QPISecurityProvider').
+
 It might be a good idea to combine both to one interface; but at the moment I decided to separate them.
 
 ==Provider interface==
-package com.qperior.gsa.oneboxprovider.provider
+It can be found in package 'com.qperior.gsa.oneboxprovider.provider' together with a abstract class which implements the interface ('QPAbstractProvider'). Therefore in normal case you will implement these abstract class. 
+Then there are only 3 methods left:
+  * public QPIOneBoxResults provideOneBoxResults() 
+  * public String getProviderName()
+  * public String toString()
 
 ==SecurityProvider interface==
-package com.qperior.gsa.oneboxprovider.security
+It can be found in package 'com.qperior.gsa.oneboxprovider.security' together with a abstract class which implements the interface ('QPAbstractSecurityProvider'). Therefore in normal case you will implement these abstract class.
