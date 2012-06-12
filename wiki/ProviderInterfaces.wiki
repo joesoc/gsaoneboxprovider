@@ -1,14 +1,15 @@
-#summary Interfaces to implement a provider.
+#summary Interfaces to implement a concrete provider for content sources.
 #labels Provider,Interface,OneBox
 
 = Introduction =
 
-Add your content here.
-
+The GSA OneBox Provider acts as a small framework to easily implement concrete provider for different content sources. To do that there are only two slim interfaces to implement. 
+A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==Provider interface==
+package com.qperior.gsa.oneboxprovider.provider
+
+==SecurityProvider interface==
+package com.qperior.gsa.oneboxprovider.security
