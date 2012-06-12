@@ -24,5 +24,7 @@ Then there are only three methods left:
 ==SecurityProvider interface==
 It can be found in package 'com.qperior.gsa.oneboxprovider.security' together with a abstract class which implements the interface ('QPAbstractSecurityProvider'). Therefore in normal case you will implement these abstract class.
 
-Then there are only three methods left:
-  * public List<QPAuthType> getSupportedAuthTypes()
+Then there are only one method left:
+  * public List getSupportedAuthTypes()
+
+See known issues about some thoughts about implementing security here.
