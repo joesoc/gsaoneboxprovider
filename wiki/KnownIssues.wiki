@@ -1,14 +1,12 @@
-#summary One-sentence summary of this page.
+#summary Known or open issues in this project.
 #labels Issues
 
 = Introduction =
 
-Add your content here.
-
+Known or open issues in this project.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==1. Monitoring is not implemented yet==
+
+==2. The security interface has to be redesigned==
