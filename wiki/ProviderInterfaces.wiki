@@ -14,17 +14,18 @@ One interface represents the provider itself ('QPIProvider') and the other encap
 It might be a good idea to combine both to one interface; but at the moment I decided to separate them.
 
 ==Provider interface==
-It can be found in package 'com.qperior.gsa.oneboxprovider.provider' together with a abstract class which implements the interface ('QPAbstractProvider'). Therefore in normal case you will implement these abstract class. 
+It can be found in package 'com.qperior.gsa.oneboxprovider.provider' together with a abstract class which implements the interface ('QPAbstractProvider'). Therefore in normal case you will implement the abstract class. 
 
-Then there are only three methods left:
+There are only three methods to implement:
   * public QPIOneBoxResults provideOneBoxResults() 
   * public String getProviderName()
   * public String toString()
 
 ==SecurityProvider interface==
-It can be found in package 'com.qperior.gsa.oneboxprovider.security' together with a abstract class which implements the interface ('QPAbstractSecurityProvider'). Therefore in normal case you will implement these abstract class.
+It can be found in package 'com.qperior.gsa.oneboxprovider.security' together with a abstract class which implements the interface ('QPAbstractSecurityProvider'). Therefore in normal case you will implement the abstract class.
 
-Then there are only one method left:
+There is only one method to implement:
   * public List getSupportedAuthTypes()
 
+The security interface has to be redesigned.
 See known issues about some thoughts about implementing security here.
