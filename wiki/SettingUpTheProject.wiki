@@ -5,14 +5,15 @@
 
 Setting up the project in the GSA and in Eclipse to test and build it.
 
-
 = Details =
 
-==Setting up the GSA==
-
 ==Setting up the project in Eclipse==
-  * just check out the project in Eclipse; everything should be OK (sources should be build automatically)
+Just check out the project in Eclipse; everything should be OK (sources should be build automatically).
 
 ==Build and deploy it==
-  * export the project as a web archive (File - Export - Web - WAR file)
+Do the following:
+  * export the project from Eclipse as a web archive (File - Export - Web - WAR file)
   * deploy it to a servlet container (e.g. Tomcat)
+
+==Setting up the GSA==
+TBD
