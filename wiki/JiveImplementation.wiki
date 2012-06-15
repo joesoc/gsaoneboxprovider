@@ -3,12 +3,8 @@
 
 = Introduction =
 
-Add your content here.
-
+Implementation of the provider interfaces (see wiki page [ProviderInterfaces]) for Jive SBS.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The implementation can be found in package 'com.qperior.gsa.oneboxprovider.implementations.jive'.
