@@ -34,6 +34,6 @@ See known issues about some thoughts about implementing security here.
 
 To create your own implementation for a content source just follow these steps:
   * Create a package under 'com.qperior.gsa.oneboxprovider.implementations'
-  * implement the two interfaces
-  * change the configuration to the  new interfaces (see wiki page [Configuration])
-  * build and deploy it (see wiki page [SettingUpTheProject])
+  * Implement the two interfaces.
+  * Change the configuration to the  new interfaces (see wiki page [Configuration]).
+  * Build and deploy it (see wiki page [SettingUpTheProject]).
