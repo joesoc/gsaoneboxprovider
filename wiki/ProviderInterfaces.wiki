@@ -5,7 +5,7 @@
 
 The GSA OneBox Provider acts as a small framework to easily implement a concrete provider for a content source. To do that there are only two slim interfaces to implement. 
 
-All implementations should be put to package 'com.qperior.gsa.oneboxprovider.implementations.jive'. A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
+All implementations should be put to package 'com.qperior.gsa.oneboxprovider.implementations'. A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
 
 = Details =
 
@@ -29,3 +29,11 @@ There is only one method to implement:
 
 The security interface has to be redesigned.
 See known issues about some thoughts about implementing security here.
+
+==Create your own implementation==
+
+To create your own implementation for a content source just follow these steps:
+  * Create a package under 'com.qperior.gsa.oneboxprovider.implementations'
+  * implement the two interfaces
+  * change the configuration to the  new interfaces (see wiki page [Configuration])
+  * build and deploy it (see wiki page [SettingUpTheProject])
