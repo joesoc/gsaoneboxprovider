@@ -5,7 +5,7 @@
 
 The GSA OneBox Provider acts as a small framework to easily implement a concrete provider for a content source. To do that there are only two slim interfaces to implement. 
 
-A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
+All implementations should be put to package 'com.qperior.gsa.oneboxprovider.implementations.jive'. A pretty easy example can be found with the dummy provider located in package 'com.qperior.gsa.oneboxprovider.implementations.dummy'.
 
 = Details =
 
