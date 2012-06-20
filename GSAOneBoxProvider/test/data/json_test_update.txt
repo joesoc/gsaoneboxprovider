@@ -1,0 +1,92 @@
+	"type" : "update",
+    "author" : {
+      "name" : "Michael Keely",
+      "level" : {
+        "name" : "Padawan",
+        "description" : "",
+        "points" : 494,
+        "resources" : {
+          "image" : {
+            "ref" : "https://jive.q-perior.com/api/core/v2/images/status/statusicon-48.gif",
+            "allowed" : [ "GET" ]
+          }
+        }
+      },
+      "username" : "1673",
+      "email" : "michael.keely@q-perior.com",
+      "firstName" : "Michael",
+      "lastName" : "Keely",
+      "resources" : {
+        "self" : {
+          "ref" : "https://jive.q-perior.com/api/core/v2/users/2006",
+          "allowed" : [ "GET" ]
+        },
+        "avatar" : {
+          "ref" : "https://jive.q-perior.com/api/core/v2/users/2006/avatar",
+          "allowed" : [ "GET" ]
+        }
+      },
+      "id" : 2006
+    },
+    "replyCount" : 0,
+    "likeCount" : 0,
+    "contentSummary" : "Lastenheft schreiben mit Guido Becker und Joerg Schmidl :-)",
+    "resources" : {
+      "self" : {
+        "ref" : "https://jive.q-perior.com/api/core/v2/updates/1092",
+        "allowed" : [ "GET" ]
+      },
+      "html" : {
+        "ref" : "https://jive.q-perior.com/people/1673/status/1092",
+        "allowed" : [ "GET" ]
+      }
+    },
+    "modificationDate" : "2012-03-01T16:20:34.337+0000"
+    
+    
+    
+    "type" : "discussion",
+    "subject" : "IBM Connections_One Pager",
+    "author" : {
+      "name" : "Nivethithaa BalasundarRaj",
+      "level" : {
+        "name" : "Jüngling",
+        "description" : "",
+        "points" : 13,
+        "resources" : {
+          "image" : {
+            "ref" : "https://jive.q-perior.com/api/core/v2/images/status/statusicon-47.gif",
+            "allowed" : [ "GET" ]
+          }
+        }
+      },
+      "username" : "1832",
+      "email" : "nivethithaa.balasundarraj@q-perior.com",
+      "firstName" : "Nivethithaa",
+      "lastName" : "BalasundarRaj",
+      "resources" : {
+        "self" : {
+          "ref" : "https://jive.q-perior.com/api/core/v2/users/2027",
+          "allowed" : [ "GET" ]
+        },
+        "avatar" : {
+          "ref" : "https://jive.q-perior.com/api/core/v2/users/2027/avatar",
+          "allowed" : [ "GET" ]
+        }
+      },
+      "id" : 2027
+    },
+    "replyCount" : 0,
+    "likeCount" : 1,
+    "contentSummary" : "Hallo Joerg,  ich habe der One-Pager&nbsp; f&uuml;r IBM Connections mit deiner Kommentare erg&#228;nzt.  Anbei findest Du der Aktueller version. &nbsp;  Viele Gr&uuml;&szlig;e  Nivi",
+    "resources" : {
+      "self" : {
+        "ref" : "https://jive.q-perior.com/api/core/v2/discussions/1795",
+        "allowed" : [ "GET" ]
+      },
+      "html" : {
+        "ref" : "https://jive.q-perior.com/thread/1795",
+        "allowed" : [ "GET" ]
+      }
+    },
+    "modificationDate" : "2012-05-07T15:11:07.910+0000"
