@@ -117,6 +117,7 @@ public class QPJiveProvider extends QPAbstractProvider {
 		// only q and limit is required
 		content.q = this.getCallParameter().getQuery();
 		content.limit = QPJiveProperties.getResultLimit();
+		content.type = QPJiveProperties.getTypeSet();
 		
 		return content;
 	}
@@ -152,8 +153,11 @@ public class QPJiveProvider extends QPAbstractProvider {
 				DefaultHttpClient httpclient = new DefaultHttpClient();		
 				httpget.addHeader("accept", "application/json");
 				/* Basic authorization with user. */
-				// TODO: get User from GSA not from Properties > SecurityProvider
-				httpget.addHeader("Authorization", "Basic " + QPJiveProperties.getAccessToken());
+				// cast the security provider to use the method
+				//QPJiveSecurityProvider secprovider = (QPJiveSecurityProvider) this.getSecurityProvider();
+				//httpget.addHeader("Authorization", "Basic " + secprovider.getBasicAccessToken());
+				// To test some features directly base64 encoded access token
+				httpget.addHeader("Authorization", "Basic " + "MTYsdfdsgs2343zcr");
 
 				HttpResponse response = httpclient.execute(httpget);
 				// use status

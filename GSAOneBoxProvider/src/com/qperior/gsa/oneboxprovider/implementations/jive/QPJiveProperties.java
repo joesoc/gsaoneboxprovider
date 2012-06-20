@@ -16,6 +16,10 @@
  */
 package com.qperior.gsa.oneboxprovider.implementations.jive;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -36,11 +40,11 @@ public class QPJiveProperties {
 	
 	private static final String KEY_TESTMODE = "Testmode";
 	
-	private static final String KEY_ACCESS_TOKEN = "AccessToken";
-	
 	private static final String KEY_JSON_PREFIX = "JsonPrefix";
 	
 	private static final String KEY_RESULT_LIMIT = "ResultLimit";
+	
+	private static final String KEY_RESULT_TYPES = "Types";
 	
 	private QPJiveProperties() {
 		
@@ -73,15 +77,6 @@ public class QPJiveProperties {
 	}
 	
 	/**
-	 * Access Token for Basic AuthN, base64 encoded username:password.
-	 * 
-	 * @return String
-	 */
-	public static String getAccessToken() {
-		return config.getString(KEY_ACCESS_TOKEN);
-	}
-	
-	/**
 	 * Jive JSON prefix to delete from response.
 	 * 
 	 * @return String
@@ -97,5 +92,15 @@ public class QPJiveProperties {
 	 */
 	public static int getResultLimit() {
 		return config.getInt(KEY_RESULT_LIMIT);
+	}
+	
+	/**
+	 * The types of content to search
+	 * 
+	 * @return Set<String>
+	 */
+	public static Set<String> getTypeSet() {
+		List<String> list = config.getList(KEY_RESULT_TYPES);
+		return new HashSet<String>(list);		
 	}
 }
