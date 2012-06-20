@@ -16,6 +16,7 @@
  */
 package com.qperior.gsa.oneboxprovider.implementations.jive.rest;
 
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -41,6 +42,28 @@ public class QPJiveRESTSearchContent extends QPJiveRESTApi {
 	 * 
 	 */
 	public Set<String> type;
+	
+	/**
+	 * Helper method to convert the Set to URL Parameter String
+	 * Example: type=discussion&type=update&
+	 * 
+	 * @return String, might be empty
+	 */
+	public String getTypeString() {
+		
+		String ret = "";
+		
+		if ( ! this.type.isEmpty() ) {
+			Iterator<String> it = this.type.iterator();
+			StringBuffer strbuf = new StringBuffer();
+			while (it.hasNext() ) {
+				strbuf.append( PAR_TYPE + "=" + it.next() + DELIMITER );
+			}
+			ret = strbuf.toString();
+		}		
+		return ret;
+	}
+	
 		 
 	/**
 	 * Type: String	<br>
@@ -141,6 +164,6 @@ public class QPJiveRESTSearchContent extends QPJiveRESTApi {
 	@Override
 	public String getURLParameterString() {
 		
-		return PAR_Q + "=" + this.q + DELIMITER + PAR_LIMIT + "=" + this.limit;
+		return PAR_Q + "=" + this.q + DELIMITER + this.getTypeString() + PAR_LIMIT + "=" + this.limit;
 	}	
 }

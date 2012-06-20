@@ -39,4 +39,9 @@ public abstract class QPJiveRESTApi implements QPIJiveRESTApi {
 	 * Parameter name of "limit"
 	 */
 	public static final String PAR_LIMIT = "limit";
+	
+	/**
+	 * Parameter name of "type"
+	 */
+	public static final String PAR_TYPE = "type";
 }
