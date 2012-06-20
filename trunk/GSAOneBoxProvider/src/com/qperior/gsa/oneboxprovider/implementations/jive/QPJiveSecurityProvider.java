@@ -19,6 +19,8 @@ package com.qperior.gsa.oneboxprovider.implementations.jive;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.codec.binary.Base64;
+
 import com.qperior.gsa.oneboxprovider.security.QPAbstractSecurityProvider;
 import com.qperior.gsa.oneboxprovider.security.QPAuthType;
 
@@ -32,7 +34,7 @@ import com.qperior.gsa.oneboxprovider.security.QPAuthType;
 public class QPJiveSecurityProvider extends QPAbstractSecurityProvider {
 
 	private List<QPAuthType> supportedAuthTypes = Arrays.asList(
-			QPAuthType.AUTHTYPE_NONE);
+			QPAuthType.AUTHTYPE_NONE, QPAuthType.AUTHTYPE_BASIC);
 
 	@Override
 	public List<QPAuthType> getSupportedAuthTypes() {
@@ -40,5 +42,23 @@ public class QPJiveSecurityProvider extends QPAbstractSecurityProvider {
 		return supportedAuthTypes;
 	}
 
+	/**
+	 * Access Token, base64 encoded username:password.
+	 * 
+	 * @return Basic access token
+	 */
+	public String getBasicAccessToken() {
+		
+		String token = this.getUserName() + ":" + this.getPassword();
+		
+		token = this.base64Encode(token);
+		
+		return token;
+	}
 	
+	private String base64Encode(String stringToEncode) {  
+		
+		byte [] stringToEncodeBytes = stringToEncode.getBytes();  
+		return Base64.encodeBase64String(stringToEncodeBytes);  
+	} 
 }
