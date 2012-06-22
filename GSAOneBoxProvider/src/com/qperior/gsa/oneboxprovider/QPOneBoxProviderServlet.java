@@ -140,7 +140,8 @@ public class QPOneBoxProviderServlet extends HttpServlet
 		QPIOneBoxResults res = null;
 		
 		try {
-			try {
+			try {				
+				// TODO: implement monitoring: JMX?
 				
 				// read in the request parameter
 				QPCallParameter callParameter = new QPCallParameter(request);
