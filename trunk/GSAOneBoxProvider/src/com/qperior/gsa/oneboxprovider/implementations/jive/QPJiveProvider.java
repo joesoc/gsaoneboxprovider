@@ -152,11 +152,12 @@ public class QPJiveProvider extends QPAbstractProvider {
 				HttpGet httpget = new HttpGet(uri);
 				DefaultHttpClient httpclient = new DefaultHttpClient();		
 				httpget.addHeader("accept", "application/json");
-				/* Basic authorization with user. */
+				
+				/* Basic authorization with user provided by the GSA. */
 				// cast the security provider to use the method
 				//QPJiveSecurityProvider secprovider = (QPJiveSecurityProvider) this.getSecurityProvider();
 				//httpget.addHeader("Authorization", "Basic " + secprovider.getBasicAccessToken());
-				// To test some features directly base64 encoded access token
+				// To test some features directly write down base64 encoded access token
 				httpget.addHeader("Authorization", "Basic " + "MTYsdfdsgs2343zcr");
 
 				HttpResponse response = httpclient.execute(httpget);

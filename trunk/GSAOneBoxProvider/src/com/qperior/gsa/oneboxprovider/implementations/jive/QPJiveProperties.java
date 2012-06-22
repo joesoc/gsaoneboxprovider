@@ -100,6 +100,7 @@ public class QPJiveProperties {
 	 * @return Set<String>
 	 */
 	public static Set<String> getTypeSet() {
+		@SuppressWarnings("unchecked")
 		List<String> list = config.getList(KEY_RESULT_TYPES);
 		return new HashSet<String>(list);		
 	}

@@ -26,6 +26,7 @@ import com.qperior.gsa.oneboxprovider.util.exception.QPProviderException;
  * Provides the functionality of the provider.
  * Has to be implemented for every concrete provider 
  * (through abstract class {@link QPAbstractProvider}).
+ * The provider knows the corresponding security provider (see getSecurityProvider).
  * 
  * @author Ralf Ovelgoenne
  *
