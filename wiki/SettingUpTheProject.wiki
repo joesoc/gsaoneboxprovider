@@ -16,4 +16,5 @@ Do the following:
   * deploy it to a servlet container (e.g. Tomcat)
 
 ==Setting up the GSA==
-TBD
+Add the Jive OneBox at "Serving > OneBox Modules" in the AdminUI. Normally you should use basic authentication. 
+You may use the XML under GSA in the project. You have to change the provider URL.
