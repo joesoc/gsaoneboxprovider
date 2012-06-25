@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onebox xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="jive_onebox" suppressDateTime="false" suppressIPAddr="false" suppressKeyword="true" type="external">
+<name>jive_onebox</name>
+<security userAuth="none"/>
+<description>Jive OneBox</description>
+<trigger triggerType="keyword">jive</trigger>
+<providerURL>http://test.com:8080/GSAOneBoxProvider/QPOneBoxProviderServlet</providerURL>
+<resultsTemplate>
+<xsl:template name="jive_onebox">
+		<table border="0" cellpadding="1" cellspacing="0">
+			<tbody>
+				<tr>
+					<td colspan="2">
+						<xsl:value-of select="provider"/>
+						<br/>
+						<nobr>
+							<a>
+								<xsl:attribute name="href">
+<xsl:value-of select="title/urlLink"/>
+</xsl:attribute>
+								<b>
+									<xsl:value-of select="title/urlText"/>
+								</b>
+							</a>
+						</nobr>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="99%">
+						<xsl:for-each select="MODULE_RESULT">
+							<font size="-1">
+								<b>
+									<a>
+										<xsl:attribute name="href">
+<xsl:value-of select="U"/>
+</xsl:attribute>
+										<xsl:value-of select="Title"/>
+									</a>
+								</b> -  
+								Type: <xsl:value-of select="Field[@name='type']"/>, 
+								Author: <xsl:value-of select="Field[@name='author']"/>
+								<!--xsl:value-of select="Field[@name='summary']"/-->
+							</font>
+							<br/>
+						</xsl:for-each>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</xsl:template>
+</resultsTemplate>
+</onebox>
