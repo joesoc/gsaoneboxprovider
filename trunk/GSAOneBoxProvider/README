@@ -1,0 +1,37 @@
+GSA OneBox Provider
+
+Setting up the project in Eclipse
+================================================================================
+Just check out the project in Eclipse; everything should be OK (sources should be build automatically).
+
+Build and deploy it
+================================================================================
+Do the following:
+- export the project from Eclipse as a web archive (File - Export - Web - WAR file)
+- deploy it to a servlet container (e.g. Tomcat)
+
+Setting up the GSA
+================================================================================
+Add the Jive OneBox? at "Serving > OneBox? Modules" in the AdminUI. Normally you should use basic authentication. You may use the XML under GSA in the project. You have to change the provider URL.
+
+Configuration
+================================================================================
+log4j.properties
+Please see the log4j documentation under: Apache Log4J
+
+GSAOneBoxProvider.properties
+#Version of the application
+Version=0.1
+
+#Provider class used (has to be a fully qualified name to find the class by reflection)
+Provider=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveProvider
+#Security provider class used (has to be a fully qualified name to find the class by reflection)
+SecurityProvider?=com.qperior.gsa.oneboxprovider.implementations.jive.QPJiveSecurityProvider
+
+Known Issues
+================================================================================
+1. Monitoring is not implemented yet
+One idea is to implement it with JMX.
+
+2. The security interface has to be redesigned
+The security interface has to be redesigned. It might be a good idea to combine both to combine it with the provider interface; but at the moment I decided to separate them.

@@ -1,0 +1,29 @@
+
+                           GSA OneBox Provider
+                            Release Notes
+
+This document contains the release notes for the GSA OneBox Provider. 
+The following sections describe the release in detail and provide 
+information that supplements the main documentation.
+
+Web Site: http://code.google.com/p/gsaoneboxprovider/
+
+
+Release 1.0.0, June 25, 2012
+================================
+
+Introduction
+------------
+This is the initial release of the GSA OneBox Provider. Just use this solution as as template for your special situation.
+
+Known limitations:
+-----------------
+1. Monitoring is not implemented yet
+One idea is to implement it with JMX.
+2. The security interface has to be redesigned
+The security interface has to be redesigned. It might be a good idea to combine both to combine it with the provider interface; but at the moment I decided to separate them.
+
+Advanced Configuration Properties
+---------------------------------
+For more details on the configuration properties, see 
+http://code.google.com/p/gsaoneboxprovider/wiki/Configuration
